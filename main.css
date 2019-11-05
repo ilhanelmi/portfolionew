@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&auto=format&fit=crop&w=2552&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.page-footer {
+
+    background-color: #3B3740;
+    color: white;
+}
+
+.navbar{
+
+    background: white;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+.navbar-brand{
+
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav.ml-auto.my-2.my-lg-0 li a:hover{
+
+color: #0669a5;
+transition: 0.2s;
+font-weight: 600;
+
+
+}
+.btn-default {
+  font-family: helvetica;
+  font-size: 13px;
+  color: #0669a5;
+  letter-spacing: 1px;
+  line-height: 15px;
+border: 2px solid #0669a5;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  padding: 2%;
+  width: 20%;
+  margin-top: 2%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-default:hover {
+  color: #FFF;
+  background-image: radial-gradient(#3b97fd,#0669a5);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about, #skills{
+
+  padding: 3%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+#portfolio{
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+#portfolio .container-fluid {
+  max-width: 1520px;
+
+}
+
+#portfolio .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
